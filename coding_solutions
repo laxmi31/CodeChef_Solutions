@@ -1,0 +1,290 @@
+########################   Mahasena   ######################################
+
+n=int(input())
+for i in range(n):
+    a=str(input( ))
+    print(type(a))
+    for j in range(len(a)):
+        if a[j]%2==0:
+            print("READY FOR BATTLE")
+            j=j+1
+        else:
+            print("NOT READY")
+
+
+
+
+
+##########################   Valid Triangles  ##################################
+
+# n=int(input())
+# for i in range(n):
+#     a, b, c=list(map(int, input().split(' ')))
+#     if((a+b+c)==180):
+#         print("YES")
+#     else:
+#         print("NO")
+
+############################  Ciel and Receipt  #############################
+# t=int(input())
+# for i in range(t):
+#     p=int(input())
+#     ans=0
+#     l=[2048,1024,512,256,128,64,32,16,8,4,2,1]
+#     while p>0: #p=10
+#         for j in l:
+#             if p>=j:
+#                 ans+=p//j #ans=10//8 ==>1
+#                 p=p%j  #10%8 ==>2
+#     print(ans)
+
+
+
+
+
+
+############################   Chef and Remissness  ########################
+#
+# num=int(input())
+# for i in range(num):
+#     a,b=map(int,input().split())
+#     if(a>b):
+#         print(a)
+#     else:
+#         print(b)
+#     print(a+b)
+#
+# or
+
+# num=int(input())
+# for i in range(num):
+#     a=list(map(int,input().split()))
+#     print(max(a),sum(a))
+
+###########################  Chef And Operators  ##########################
+
+# num=int(input())
+# for i in range(num):
+#     a,b=map(int,input().split())
+#     if(a<b):
+#         print("<")
+#     elif(a>b):
+#         print(">")
+#     else:
+#         print("=")
+
+
+#########################  Helping Chef  #################################
+
+# num=int(input())
+# for i in range(num):
+#     a=int(input())
+#     if(a<10):
+#         print("Thanks for helping Chef!")
+#     else:
+#         print("-1")
+
+#########################  factorial ######################################
+
+# num=int(input("enter the num :"))
+#
+# for i in range(num):
+#     a = int(input())
+#     fact = 1
+#     for i in range(1,a+1):
+#         fact=fact*i
+#     print(fact)
+
+
+#######################   MUFFINS3 #########################################
+
+# num=int(input("enter the num"))
+# for i in range(num):
+#     a=int(input("enter the num"))
+#     if(a==2):
+#         print(a)
+#     else:
+#         print((a//2)+1)
+
+
+##########################   Second Largest  ##################################
+
+# num=int(input("enter the number\n"))
+# for i in range(num):
+#     a=list(map(int,input().split()))
+#     a.sort()
+#     print(a[1])
+
+
+
+############################   The Lead Game  #################################
+
+# num = int(input("enter the list\n"))
+# p,m,n,diff=0,0,0,0
+# for i in range(num):
+#    a, b = map(int, input().split(' '))
+#    m=m+a
+#    n=n+b
+#    if((abs(m-n))>0):
+#        p=1
+#        diff=abs(m-n)
+#    else:
+#        p=2
+#        diff=abs(n-m)
+# print(p,diff)
+
+
+##################################### find squareRoot ######################
+
+# from math import sqrt, floor
+#
+# n= int(input("enter the n\n"))
+# for i in range(n):
+#     k= int(input("enter the numbers\n"))
+#     i=floor(sqrt(k))
+#     print(i)
+
+
+########################Reverse The Number Solved######################################
+
+
+# t=int(input())
+# for i in range(t):
+#     a=input()
+#     print(int(a[::-1]))
+#     t-=1
+
+
+
+
+# num=int(input("enter the num\n"))
+# while (num > 0):
+#     # Logic
+#     test_num=0
+#     remainder = num % 10
+#     test_num = (test_num * 10) + remainder
+#     num = num // 10
+#
+# # Display the result
+# print("The reverse number is : {}".format(test_num))
+
+
+
+# a = int(input("enter the list\n"))
+#
+# while(n>0):
+#     rev_num=0
+#     a=a%10
+#     rev_num=(rev_num*10)+a
+#     a=a//10
+# print(rev_num)
+#
+#
+
+
+# a=200
+# rev_num==>0*10 +200%10=0+0 ==0
+# a=>200/10=20
+#
+# //0
+# //00
+# //002
+
+
+########################Lucky Four  ###########################
+
+# n=int(input("enter the num\n"))
+#
+# while(n>0):
+#     i = 0
+#     a=str(input("enter the numbers\n"))
+#     for j in a:
+#         if(j=='4'):
+#             i=i+1
+#     print(i)
+
+
+
+
+# t=int(input())
+# while(t>0):
+#     count=0
+#     a=str(input())
+#     for j in a:
+#         if j == '4':
+#             count+=1
+#     print(count)
+
+
+
+
+
+####################################################
+
+
+# n=int(input("enter the numbers\n"))
+# while n>0:
+#     a=str(input("enter the list\n"))
+#     print(int(a[0]) + int(a[len(a) - 1]))
+#
+
+
+# for i in range(int(input())):
+#     x = str(input())
+#     x = int(x[0])+int(x[len(x)-1])
+#     print(x)
+
+# print(int(a[0]))
+#     print(a[len(a)-1])
+
+# sum=a+b
+# print(sum)
+
+
+# n=int(input("enter number\n"))
+# a=[]
+# for i in range(n):
+#    item= int(input("enter list\n"))
+#    a.append(item)
+# a.sort()
+#
+# for i in a:
+#     print(i)
+#
+#
+# l=[]
+# n=int(input())
+# for i in range(n):
+#     a=int(input())
+#     l.append(a)
+# l.sort()
+# for i in range(n):
+#     print(l[i])
+
+# n=int(input("enter the number of integers:\n"))
+# a=[]
+# for i in range(0,n):
+#     a.append(int(input("The Array is with :")))
+# print(a)
+# m=int(input("enter the number of integers:\n"))
+# b=[]
+# for i in range(0,m):
+#     b.append(int(input("The Array is with :")))
+# print(b)
+#
+# c=[]
+# for i in range(n):
+#     for j in range(m):
+#         if(a[i]==b[j]):
+#             c=c+a
+#         print(c)
+    #         break
+    # if (j == m):
+    #     print("The result is present in 1st array is:",j)
+
+
+# b=int(input("Enter the Sequence B:\n").split(","))
+# for i in range(a):
+#     for j in range(b):
+#         print(i)
+#         print(j)
